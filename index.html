@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Restaurant</title>
+  <meta name="description" content="Fresh menu every dayffdfdsfsgasgwagawgmawljekgjweoghjisengfjlwngujlkasngjlawnljkgbaWLKHGBAKSHBGKHLABGLKJABGLJARJKBGJLwlbghwbdgfajlkbgfslhkgbalhkgf
+ aeljgfnkjals" />
+  <meta property="og:title" content="Restaurant" />
+  <meta property="og:description" content="Fresh menu every dayffdfdsfsgasgwagawgmawljekgjweoghjisengfjlwngujlkasngjlawnljkgbaWLKHGBAKSHBGKHLABGLKJABGLJARJKBGJLwlbghwbdgfajlkbgfslhkgbalhkgf
+ aeljgfnkjals" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=1400&amp;q=70" />
+  <style>
+html, body { height: 100%; }
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 1.5rem;
+  background: #0b1220;
+  color: #e5e7eb;
+  font-family: system-ui,-apple-system,sans-serif;
+  font-size: 16px;
+}
+header, footer { margin-bottom: 1rem; }
+footer { margin-top: auto; }
+main {
+  flex: 1 0 auto;
+  background: rgba(15,23,42,.9);
+  padding: 1.25rem;
+  border-radius: .75rem;
+  box-shadow: none;
+}
+img { max-width: 100%; height: auto; display: block; margin: .75rem 0; border-radius: .5rem; }
+a.effect-shadow, .effect-shadow { box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45); }
+a.effect-glow, .effect-glow { box-shadow: 0 0 24px rgba(99, 102, 241, 0.65); }
+.site-title { font-size: 1.5rem; font-weight: 700; margin-bottom: .75rem; }
+.site-header { display: flex; align-items: center; gap: .5rem; padding: .75rem 1rem; border-radius: .25rem; background: rgba(15,23,42,.9); }
+.site-avatar { width: 72px; height: 72px; object-fit: cover; border-radius: 12px; border: 2px solid rgba(255,255,255,.4); box-shadow: 0 8px 20px rgba(0,0,0,.45); }
+a.button-link {
+  display: inline-block;
+  border-radius: 18px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: none;
+}
+.contact-form-shell {
+  max-width: 640px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(15,23,42,.9);
+}
+.sb-contact-form {
+  display: grid;
+  gap: .7rem;
+}
+.sb-contact-form input,
+.sb-contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(148, 163, 184, .4);
+  border-radius: 12px;
+  padding: .65rem .8rem;
+  background: rgba(0, 0, 0, .08);
+  color: #e5e7eb;
+}
+.sb-contact-form button {
+  border: none;
+  border-radius: 18px;
+  padding: .7rem 1rem;
+  font-weight: 600;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: none;
+}
+.sb-contact-form button.is-loading {
+  opacity: .8;
+  cursor: wait;
+}
+.sb-hp {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+.sb-contact-success,
+.sb-contact-error {
+  margin-top: .7rem;
+  font-size: .95rem;
+}
+.sb-contact-success {
+  color: #34d399;
+  border: 1px solid rgba(52, 211, 153, .35);
+  background: rgba(16, 185, 129, .1);
+  padding: .6rem .7rem;
+  border-radius: 12px;
+}
+.sb-contact-error { color: #fca5a5; }
+.sb-site-ad {
+  margin: 1rem auto;
+  max-width: 760px;
+  border: 1px solid rgba(148, 163, 184, 0.32);
+  border-radius: 16px;
+  padding: 1rem 1.1rem;
+  background: linear-gradient(135deg, rgba(37, 99, 235, .16), rgba(15, 23, 42, .64));
+  box-shadow: 0 14px 32px rgba(2, 6, 23, .35);
+}
+.sb-site-ad-title {
+  font-size: .84rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  opacity: .92;
+  margin-bottom: .25rem;
+  font-weight: 700;
+}
+.sb-site-ad-text {
+  margin-bottom: .5rem;
+}
+.sb-site-ad-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  color: #fff;
+  background: #2563eb;
+  padding: .42rem .72rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.sb-site-ad-link:hover {
+  filter: brightness(1.06);
+}
+
+  </style>
+</head>
+<body>
+  <div class="site-title " style="text-align:left;color:#e5e7eb">Restaurant</div>
+  <header class="site-header " style="text-align:left;color:#e5e7eb">
+    <div>Fresh menu every day</div>
+  </header>
+  <main>
+    <div class="" style="text-align:left;border-radius:12px;box-shadow:none;"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=1400&amp;q=70" alt="" style="border-radius:12px;"></div>
+    <div class="" style="text-align:left;color:#e5e7eb;font-family:system-ui,-apple-system,sans-serif;font-size:16px;"><h2>Today specials</h2></div>
+    <div class="" style="text-align:left;color:#e5e7eb;font-family:system-ui,-apple-system,sans-serif;font-size:16px;border-radius:12px;box-shadow:none;">
+      <table style="width:100%;border-collapse:collapse;">
+        <tr>
+          <td style="border:1px solid rgba(148,163,184,.35);padding:.55rem .65rem;">Dish</td>
+          <td style="border:1px solid rgba(148,163,184,.35);padding:.55rem .65rem;">Price</td>
+        </tr>
+        <tr>
+          <td style="border:1px solid rgba(148,163,184,.35);padding:.55rem .65rem;">Pasta</td>
+          <td style="border:1px solid rgba(148,163,184,.35);padding:.55rem .65rem;">$14</td>
+        </tr>
+        <tr>
+          <td style="border:1px solid rgba(148,163,184,.35);padding:.55rem .65rem;">Steak</td>
+          <td style="border:1px solid rgba(148,163,184,.35);padding:.55rem .65rem;">$22</td>
+        </tr>
+        <tr>
+          <td style="border:1px solid rgba(148,163,184,.35);padding:.55rem .65rem;">Salad</td>
+          <td style="border:1px solid rgba(148,163,184,.35);padding:.55rem .65rem;">$9</td>
+        </tr>
+      </table>
+    </div>
+    <div class="" style="text-align:left;color:#e5e7eb;font-family:system-ui,-apple-system,sans-serif;font-size:16px;"><p>Open daily: 10:00 - 23:00. City center, Main Street 10.</p></div>
+    <div class="contact-form-shell " style="text-align:left;border-radius:12px;box-shadow:none;">
+      <form class="sb-contact-form" data-site-id="2a92e4fd-3716-491b-a47d-1888ded296a6" data-lang="en" style="grid-template-columns:repeat(1, minmax(0,1fr));">
+        <input type="text" name="name" placeholder="Your name" required style="grid-column: span 1;">
+        <input type="email" name="email" placeholder="Your email" required style="grid-column: span 1;">
+        <select name="subject" required style="grid-column:1 / -1;">
+          <option value="">Subject: choose</option>
+          <option value="Partnership">Partnership</option>
+          <option value="Question">Question</option>
+          <option value="Support">Support</option>
+          <option value="Other">Other</option>
+        </select>
+        <textarea name="message" placeholder="Message" rows="5" required style="grid-column:1 / -1;"></textarea>
+        <label class="sb-captcha-label" style="grid-column:1 / -1;"></label>
+        <input type="number" name="captcha_answer" placeholder="Captcha answer" required style="grid-column:1 / -1;">
+        <input type="text" name="honeypot" autocomplete="off" tabindex="-1" class="sb-hp">
+        <button type="submit" style="grid-column:1 / -1;background:#2563eb;border-radius:12px;box-shadow:none;font-family:system-ui,-apple-system,sans-serif;font-size:16px;">Send</button>
+      </form>
+      <div class="sb-contact-success" hidden>Thanks! Message sent. We usually reply within 24 hours.</div>
+      <div class="sb-contact-error" hidden>Error. Try again later.</div>
+    </div>
+    <div class="" style="text-align:left;color:#e5e7eb;font-family:system-ui,-apple-system,sans-serif;font-size:16px;"><h2>Тарифы и запуск</h2></div>
+    <div class="" style="text-align:left;color:#e5e7eb;font-family:system-ui,-apple-system,sans-serif;font-size:16px;"><p>Выберите план и запустите сайт сегодня.</p></div>
+    <div style="text-align:left;"><a href="/pricing" target="_blank" rel="noopener noreferrer" class="button-link " style="padding:8px 16px;background:#2563eb;color:#fff;border-radius:12px;box-shadow:none;font-family:system-ui,-apple-system,sans-serif;font-size:16px;">Смотреть тарифы</a></div>
+    <div class="" style="text-align:left;color:#e5e7eb;font-family:system-ui,-apple-system,sans-serif;font-size:16px;"><h2>FAQ</h2></div>
+    <div class="" style="text-align:left;color:#e5e7eb;font-family:system-ui,-apple-system,sans-serif;font-size:16px;"><p>Есть вопросы? Посмотрите ответы в FAQ.</p></div>
+    <div style="text-align:left;"><a href="/faq" target="_blank" rel="noopener noreferrer" class="button-link " style="padding:8px 16px;background:#2563eb;color:#fff;border-radius:12px;box-shadow:none;font-family:system-ui,-apple-system,sans-serif;font-size:16px;">Open FAQ</a></div>
+  </main>
+  <footer class="" style="text-align:left;color:#e5e7eb"><div>Reserve your table</div></footer>
+  <script>
+    document.querySelectorAll('.sb-contact-form').forEach(function(form) {
+      var a = 1 + Math.floor(Math.random() * 4);
+      var b = 1 + Math.floor(Math.random() * 5);
+      var expectedCaptcha = a + b;
+      var captchaLabel = form.querySelector('.sb-captcha-label');
+      if (captchaLabel) captchaLabel.textContent = (form.dataset.lang === 'ru' ? 'Проверка: ' : 'Check: ') + a + ' + ' + b + ' = ?';
+      var submitBtn = form.querySelector('button[type="submit"]');
+      function validateLive() {
+        var name = (form.querySelector('[name="name"]').value || '').trim();
+        var email = (form.querySelector('[name="email"]').value || '').trim();
+        var message = (form.querySelector('[name="message"]').value || '').trim();
+        var captcha = (form.querySelector('[name="captcha_answer"]').value || '').trim();
+        var subject = (form.querySelector('[name="subject"]').value || '').trim();
+        var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        var captchaOk = Number(captcha) === expectedCaptcha;
+        var messageOk = message.length >= 5 && message.length <= 2000;
+        var canSend = name.length > 0 && subject.length > 0 && emailOk && messageOk && captchaOk;
+        if (submitBtn) submitBtn.disabled = !canSend;
+      }
+      ['input','change'].forEach(function(evt){ form.addEventListener(evt, validateLive); });
+      validateLive();
+      form.addEventListener('submit', async function(event) {
+        event.preventDefault();
+        var card = form.closest('.contact-form-shell');
+        var success = card ? card.querySelector('.sb-contact-success') : null;
+        var error = card ? card.querySelector('.sb-contact-error') : null;
+        if (success) success.hidden = true;
+        if (error) { error.hidden = true; error.textContent = 'Error. Try again later.'; }
+        var endpoints = ['https://sitebuilding.onrender.com/api/messages', 'https://sitebuilding.onrender.com/api/messages', '/api/messages'];
+        endpoints = endpoints.filter(function(v, i, arr) { return arr.indexOf(v) === i; });
+        var payload = {
+          siteId: form.dataset.siteId,
+          name: form.querySelector('[name="name"]').value,
+          email: form.querySelector('[name="email"]').value,
+          subject: form.querySelector('[name="subject"]').value,
+          message: form.querySelector('[name="message"]').value,
+          captcha: form.querySelector('[name="captcha_answer"]').value,
+          honeypot: form.querySelector('[name="honeypot"]').value
+        };
+        if (Number((payload.captcha || '').trim()) !== expectedCaptcha) {
+          if (error) {
+            error.textContent = 'Captcha answer is incorrect. Please try again.';
+            error.hidden = false;
+          }
+          return;
+        }
+        payload.message = '[' + (payload.subject || 'General') + '] ' + payload.message;
+        var recentKey = 'sb_contact_last_' + (payload.siteId || '');
+        var recentTs = parseInt(localStorage.getItem(recentKey) || '0', 10);
+        if (recentTs > 0 && (Date.now() - recentTs) < 120000) {
+          if (error) {
+            error.textContent = 'This device already sent a message. Try again later.';
+            error.hidden = false;
+          }
+          return;
+        }
+        try {
+          if (submitBtn) { submitBtn.disabled = true; submitBtn.classList.add('is-loading'); }
+          var resp = null;
+          var lastNetworkError = null;
+          var lastHttpResp = null;
+          for (var i = 0; i < endpoints.length; i++) {
+            try {
+              resp = await fetch(endpoints[i], {
+                method: 'POST',
+                mode: 'cors',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: JSON.stringify({ siteId: payload.siteId, name: payload.name, email: payload.email, content: payload.message, honeypot: payload.honeypot })
+              });
+              if (resp && resp.ok) {
+                break;
+              }
+              lastHttpResp = resp;
+              resp = null;
+            } catch (networkErr) {
+              lastNetworkError = networkErr;
+            }
+          }
+          if (!resp) {
+            if (lastHttpResp) {
+              resp = lastHttpResp;
+            } else {
+              throw (lastNetworkError || new Error('network_error'));
+            }
+          }
+          if (!resp.ok) {
+            var problem = null;
+            try { problem = await resp.json(); } catch (_) { }
+            var reason = problem && problem.reason ? problem.reason : '';
+            if (error) {
+              if (reason === 'invalid_email') error.textContent = 'Invalid email format.';
+              else if (reason === 'invalid_name') error.textContent = 'Invalid name.';
+              else if (reason === 'invalid_message' || reason === 'invalid_content') error.textContent = 'Invalid message length.';
+              else if (reason === 'rate_limit') error.textContent = 'This device already sent a message. Try again later.';
+              else if (reason === 'limit') error.textContent = 'Daily limit reached. Try again later.';
+              else if (reason === 'site_not_found') error.textContent = 'Site not found. Re-publish the site.';
+              else if (reason === 'spam') error.textContent = 'Message blocked by anti-spam.';
+              else error.textContent = 'Error. Try again later.';
+            }
+            throw new Error('send_failed');
+          }
+          form.reset();
+          try { localStorage.setItem(recentKey, String(Date.now())); } catch (_) { }
+          if (success) success.hidden = false;
+          a = 1 + Math.floor(Math.random() * 4);
+          b = 1 + Math.floor(Math.random() * 5);
+          expectedCaptcha = a + b;
+          if (captchaLabel) captchaLabel.textContent = (form.dataset.lang === 'ru' ? 'Проверка: ' : 'Check: ') + a + ' + ' + b + ' = ?';
+        } catch (e) {
+          if (error && (!error.textContent || error.textContent === 'Error. Try again later.')) error.textContent = 'Message limit reached. Try again later.';
+          if (error) error.hidden = false;
+        } finally {
+          if (submitBtn) { submitBtn.classList.remove('is-loading'); validateLive(); }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
